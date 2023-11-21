@@ -1,0 +1,29 @@
+<!-- <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div> -->
+  <!-- <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div> -->
+<!-- <h2>My Heroes</h2> -->
+<!-- <ul class="heroes">
+      <li *ngFor="let heroo of heroe">
+    <button [class.selected]="heroo === selectedHero" type="button" (click)="onSelect(heroo)">
+        <span class="badge">{{heroo.id}}</span>
+        <span class="name">{{heroo.name}}</span>
+      </button>
+    </li>
+</ul>
+
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+   -->
+   <h2>My Heroes</h2>
+   <ul class="heroes">
+    <li *ngFor="let hero of heroe">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+    </li>
+  </ul>
